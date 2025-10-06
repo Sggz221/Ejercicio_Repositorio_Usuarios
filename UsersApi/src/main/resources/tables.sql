@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS users;
+
+CREATE TABLE IF NOT EXISTS users(
+    id BIGINT PRIMARY KEY,
+    name VARCHAR(40) NOT NULL,
+    username VARCHAR(80) NOT NULL,
+    email VARCHAR (255) NOT NULL,
+    created_at TIMESTAMP NOT NULL,
+    updated_at TIMESTAMP NOT NULL
+);
