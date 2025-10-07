@@ -110,7 +110,6 @@ class UserServiceImplTest {
         verify(cache).put(1L, user);
         verify(localRepository).getById(1L);
 
-        // no uses never() con remoteRepository, usa:
         verify(remoteRepository).getById(anyLong()); // o verifica número exacto de llamadas si quieres
     }
 
